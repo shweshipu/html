@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cabin Bold'), local('Cabin-Bold'), url(https://fonts.gstatic.com/s/cabin/v12/u-480qWljRw-PdeL2uhluyw.ttf) format('truetype');
+}
