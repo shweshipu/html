@@ -1,6 +1,6 @@
 
 	<html>
-	<link href="css/sjh.css" rel="stylesheet">
+	<link href="css/grayscale.min.css" rel="stylesheet">
 
 		<head><title>Presentation</title>
 
@@ -13,11 +13,12 @@
 </head>
 <body>
 	<div id = "menu">
-			<a href = "index.php?v=0"  >points</a>&nbsp;
-			<a href = "index.php?v=1"  >computer</a>&nbsp;
+			<a class="btn btn-default btn-lg" href = "index.php?v=0"  >Who I am</a>&nbsp; &nbsp;
+			<a class="btn btn-default btn-lg" href = "index.php?v=1"  >Tri-Tech</a>&nbsp; &nbsp;
+			<a class="btn btn-default btn-lg" href = "index.php?v=2"  >Plans</a>&nbsp; &nbsp;
+			<a class="btn btn-default btn-lg" href = "index.php?v=3"  >Project</a>&nbsp; &nbsp;
 			<hr />
 		</div>
-
 		<div id = "contents">
 		<pre>
 			<?php
@@ -26,21 +27,20 @@
 				} else {
 					$thepost = -1;
 				}
-
 			if ($thepost == -1) {
 				echo "welcome to the bid presentation";
 			}
 			if ($thepost == 0) {
-				require "points.txt";
+				require "me.php";
 			}
 			if ($thepost == 1) {
-				require "computer.php";
+				require "tritech.php";
 			}
 			if ($thepost == 2) {
-				require "custom.txt";
+				require "plans.php";
 			}
 			if ($thepost == 3) {
-				require "price.txt";
+				require "computer.php";
 			}
 			if ($thepost == 4) {
 				require "server.txt";
@@ -56,7 +56,5 @@
 		</pre>
 		<hr />
 	</div>
-
-
 </body>
 </html>
