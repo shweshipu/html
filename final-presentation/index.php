@@ -13,10 +13,12 @@
 </head>
 <body>
 	<div id = "menu">
-			<a class="btn btn-default btn-lg" href = "index.php?v=0"  >Who I am</a>&nbsp; &nbsp;
+			<!--<a class="btn btn-default btn-lg" href = "index.php?v=0"  >Who I am</a>&nbsp; &nbsp;
 			<a class="btn btn-default btn-lg" href = "index.php?v=1"  >Tri-Tech</a>&nbsp; &nbsp;
 			<a class="btn btn-default btn-lg" href = "index.php?v=2"  >Plans</a>&nbsp; &nbsp;
+			-->
 			<a class="btn btn-default btn-lg" href = "index.php?v=3"  >Project</a>&nbsp; &nbsp;
+
 			<hr />
 		</div>
 		<div id = "contents">
@@ -28,7 +30,7 @@
 					$thepost = -1;
 				}
 			if ($thepost == -1) {
-				echo "welcome to the bid presentation";
+				require "computer.php";
 			}
 			if ($thepost == 0) {
 				require "me.php";
